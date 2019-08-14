@@ -23,7 +23,7 @@
  * @package    LUKA_GoogleAdWords
  * @copyright  Copyright (c) 2009 LUKA netconsult GmbH (www.luka.de)
  * @license    GNU General Public Licence 3 <http://www.gnu.org/licenses/gpl-3.0.txt>
- * @version    $Id: Conversion.php 2505 2009-08-13 16:26:22Z helmert $
+ * @version    $Id: Conversion.php 2637 2009-08-31 14:02:28Z helmert $
  */
 
 /**
@@ -31,7 +31,7 @@
  *
  * @author    Axel Helmert <ah@luka.de>
  * @copyright Copyright (c) 2009 LUKA netconsult GmbH (www.luka.de)
- * @version   $Id: Conversion.php 2505 2009-08-13 16:26:22Z helmert $
+ * @version   $Id: Conversion.php 2637 2009-08-31 14:02:28Z helmert $
  * @package   LUKA_GoogleAdWords
  */
 class LUKA_GoogleAdWords_Block_Conversion
@@ -69,7 +69,7 @@ extends Mage_Core_Block_Template
     public function getConversionId()
     {
         if (!$this->hasConversionId()) {
-            $conversionId = (int)Mage::getStoreConfigFlag('google/adwords_conversion/conversion_id');
+            $conversionId = (int)Mage::getStoreConfig('google/adwords_conversion/conversion_id');
             $this->setConversionId($conversionId);
         }
 
@@ -177,6 +177,27 @@ extends Mage_Core_Block_Template
         if ($this->getRequest()->isSecure()) {
             $url = 'https://www.googleadservices.com/pagead/conversion.js';
         }
+
+        return $url;
+    }
+
+    /**
+     * Returns the non JS fallback url
+     *
+     * @return string
+     */
+    public function getFallbackUrl()
+    {
+        $url = 'http';
+
+        if ($this->getRequest()->isSecure()) {
+            $url .= 's';
+        }
+
+        $url .= '://www.googleadservices.com/pagead/conversion/'
+              . $this->getConversionId() . '/?value='
+              . $this->getConversionValue()
+              . '&label=' . $this->getConversionLabel() . '&guid=ON&script=0';
 
         return $url;
     }

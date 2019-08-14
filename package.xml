@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>LUKA_GoogleAdWords</name>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <stability>stable</stability>
     <license uri="http://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License 3</license>
     <channel>community</channel>
@@ -12,9 +12,9 @@
 The code will be placed on the onepage checkout success page</description>
     <notes>Tested with Magento 1.3.2.2</notes>
     <authors><author><name>Axel Helmert</name><user>auto-converted</user><email>ah@luka.de</email></author></authors>
-    <date>2009-08-19</date>
-    <time>16:30:45</time>
-    <contents><target name="magelocale"><dir name="de_DE"><file name="LUKA_GoogleAdWords.csv" hash="ea7dd44eb3c8dfa8d7a619b6f49340b8"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="luka_googleadwords.xml" hash="8e103378556bf6e167c02fb0fb3faefe"/></dir><dir name="template"><dir name="luka"><dir name="google"><dir name="adwords"><file name="conversion.phtml" hash="638c5d140afc0b08242a4c6fb017df14"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="LUKA"><dir name="GoogleAdWords"><dir name="Block"><file name="Conversion.php" hash="51cdb228f0eccbc5f5a129fd044df06c"/></dir><dir name="etc"><file name="config.xml" hash="5e90fe98fa751a315d79a1691a569903"/><file name="system.xml" hash="2931cf8a51a0370af785b74a87c97cd9"/></dir><dir name="Helper"><file name="Data.php" hash="fa7448a7d01bb7039f5da946cd32e203"/></dir><file name="LICENSE" hash="d32239bcb673463ab874e80d47fae504"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="LUKA_GoogleAdWords.xml" hash="75a2042c3da36b91e1ee247a2cd4de72"/></dir></target></contents>
+    <date>2009-09-03</date>
+    <time>13:41:57</time>
+    <contents><target name="magelocale"><dir name="de_DE"><file name="LUKA_GoogleAdWords.csv" hash="ea7dd44eb3c8dfa8d7a619b6f49340b8"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="luka_googleadwords.xml" hash="8e103378556bf6e167c02fb0fb3faefe"/></dir><dir name="template"><dir name="luka"><dir name="google"><dir name="adwords"><file name="conversion.phtml" hash="d076c1bc13ac4cfcb81e416be5ec049c"/></dir></dir></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="LUKA"><dir name="GoogleAdWords"><dir name="Block"><file name="Conversion.php" hash="48faa82265089140c7618ff8c1ccc02e"/></dir><dir name="etc"><file name="config.xml" hash="5efe30afd0ae19b7dfc37ce3d18326b9"/><file name="system.xml" hash="2931cf8a51a0370af785b74a87c97cd9"/></dir><dir name="Helper"><file name="Data.php" hash="fa7448a7d01bb7039f5da946cd32e203"/></dir><file name="LICENSE" hash="d32239bcb673463ab874e80d47fae504"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="LUKA_GoogleAdWords.xml" hash="75a2042c3da36b91e1ee247a2cd4de72"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>

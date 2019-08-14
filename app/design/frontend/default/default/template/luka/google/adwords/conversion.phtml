@@ -24,7 +24,7 @@
  * @package    LUKA_GoogleAdWords
  * @copyright  Copyright (c) 2009 LUKA netconsult GmbH (www.luka.de)
  * @license    GNU General Public Licence 3 <http://www.gnu.org/licenses/gpl-3.0.txt>
- * @version    $Id: conversion.phtml 2505 2009-08-13 16:26:22Z helmert $
+ * @version    $Id: conversion.phtml 2637 2009-08-31 14:02:28Z helmert $
  */
 ?>
 <!-- Google Code for Kauf Conversion Page -->
@@ -42,4 +42,10 @@
     <?php endif ?>
     </script>
     <script type="text/javascript" src="<?php echo $this->getConversionScriptUrl() ?>"></script>
+
+    <noscript>
+        <div style="display:inline">
+            <img height="1" width="1" style="border-style:none" alt="" src="<?php echo $this->getFallbackUrl() ?>" />
+        </div>
+    </noscript>
 </div>
