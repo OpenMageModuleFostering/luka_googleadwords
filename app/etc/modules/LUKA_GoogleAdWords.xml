@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <LUKA_GoogleAdWords>
+            <codePool>community</codePool>
+            <active>true</active>
+        </LUKA_GoogleAdWords>
+    </modules>
+</config>
+
