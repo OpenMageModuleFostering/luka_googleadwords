@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/LUKA_GoogleAdWords",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License-3",
+    "homepage": "",
+    "description": "This Module integrates the Google AdWords Conversion Tracking code.",
+    "authors": [
+    {
+        "name": "Axel Helmert",
+        "email": "ah@luka.de"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

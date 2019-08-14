@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <checkout_onepage_success>
+        <reference name="content">
+            <block type="luka_googleaw/conversion" name="google_conversion_tracking" />
+        </reference>
+    </checkout_onepage_success>
+</layout>
